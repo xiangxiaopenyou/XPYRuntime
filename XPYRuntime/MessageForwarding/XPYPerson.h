@@ -12,7 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XPYPerson : NSObject
 + (void)eat:(NSString *)food;
-- (void)sing:()
+- (void)sing:(NSString *)song;
+
++ (void)run:(NSString *)road;
+- (void)work:(NSString *)jorb;
+- (void)jump:(NSString *)things;
 
 @end
 
