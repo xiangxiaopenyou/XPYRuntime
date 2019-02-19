@@ -8,8 +8,13 @@
 
 #import "ViewController.h"
 #import "XPYPerson.h"
+#import "UIButton+XPYBlockAction.h"
+#import "UIViewController+XPYMethodSwizzling.h"
 
 @interface ViewController ()
+@property (nonatomic, weak) NSString *testString1;
+@property (nonatomic, weak) NSString *testString2;
+@property (nonatomic, weak) NSString *testString3;
 
 @end
 
@@ -29,7 +34,22 @@
     
     //消息转发 重定向
     [self performSelector:@selector(jump:) withObject:nil];
+    
+    //分类添加属性
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(0, 64, 100, 30);
+    button.backgroundColor = [UIColor redColor];
+    [button setTitle:@"按钮" forState:UIControlStateNormal];
+    [button addTapAction:^(UIButton * _Nonnull button) {
+        NSLog(@"点击了按钮，分类添加属性成功");
+    }];
+    [self.view addSubview:button];
 }
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSLog(@"viewDidAppear");
+}
+
 
 #pragma mark - 消息动态处理
 + (BOOL)resolveInstanceMethod:(SEL)sel {
