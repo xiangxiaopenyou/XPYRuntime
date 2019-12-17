@@ -7,12 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XPYPerson : NSObject
-+ (void)eat:(NSString *)food;
-- (void)sing:(NSString *)song;
+@interface XPYPerson : NSObject <NSSecureCoding>
+
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, assign) NSInteger age;
+@property (nonatomic, assign) CGFloat weight;
+
+//+ (void)eat:(NSString *)food;
+//- (void)sing:(NSString *)song;
 
 + (void)run:(NSString *)road;
 - (void)work:(NSString *)jorb;
