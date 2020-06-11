@@ -42,6 +42,10 @@
     NSLog(@"消息转发完成");
 }
 
+- (void)test {
+    NSLog(@"test");
+}
+
 
 /// 解档
 /// @param coder coder

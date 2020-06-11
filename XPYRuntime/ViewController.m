@@ -20,6 +20,9 @@
 @end
 
 @implementation ViewController
++ (void)load {
+    NSLog(@"load test");
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,8 +58,10 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     NSLog(@"viewDidAppear");
+    
+    XPYPerson *person = [[XPYPerson alloc] init];
+    [person test];
 }
-
 
 #pragma mark - 消息动态处理
 + (BOOL)resolveInstanceMethod:(SEL)sel {

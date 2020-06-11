@@ -18,6 +18,9 @@
 		6C757716221BDC23005254CF /* UIViewController+XPYMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C757715221BDC23005254CF /* UIViewController+XPYMethodSwizzling.m */; };
 		6CCA502823A329630048C29B /* UIViewController+XPYMethodSwizze.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCA502723A329630048C29B /* UIViewController+XPYMethodSwizze.m */; };
 		6CCA502E23A33AC90048C29B /* UIButton+XPYImageURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCA502D23A33AC90048C29B /* UIButton+XPYImageURL.m */; };
+		6CEA6C65246A360F0052E200 /* XPYPerson+Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA6C64246A360F0052E200 /* XPYPerson+Test1.m */; };
+		6CEA6C68246A361A0052E200 /* XPYPerson+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA6C67246A361A0052E200 /* XPYPerson+Test2.m */; };
+		6CEA6C6B246A362D0052E200 /* XPYPerson+Test3.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA6C6A246A362D0052E200 /* XPYPerson+Test3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,12 @@
 		6CCA502723A329630048C29B /* UIViewController+XPYMethodSwizze.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XPYMethodSwizze.m"; sourceTree = "<group>"; };
 		6CCA502C23A33AC90048C29B /* UIButton+XPYImageURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+XPYImageURL.h"; sourceTree = "<group>"; };
 		6CCA502D23A33AC90048C29B /* UIButton+XPYImageURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XPYImageURL.m"; sourceTree = "<group>"; };
+		6CEA6C63246A360F0052E200 /* XPYPerson+Test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XPYPerson+Test1.h"; sourceTree = "<group>"; };
+		6CEA6C64246A360F0052E200 /* XPYPerson+Test1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XPYPerson+Test1.m"; sourceTree = "<group>"; };
+		6CEA6C66246A361A0052E200 /* XPYPerson+Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XPYPerson+Test2.h"; sourceTree = "<group>"; };
+		6CEA6C67246A361A0052E200 /* XPYPerson+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XPYPerson+Test2.m"; sourceTree = "<group>"; };
+		6CEA6C69246A362D0052E200 /* XPYPerson+Test3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XPYPerson+Test3.h"; sourceTree = "<group>"; };
+		6CEA6C6A246A362D0052E200 /* XPYPerson+Test3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XPYPerson+Test3.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,12 @@
 			children = (
 				3DBF6D1322068AEB002FBFF1 /* XPYPerson.h */,
 				3DBF6D1222068AEB002FBFF1 /* XPYPerson.m */,
+				6CEA6C63246A360F0052E200 /* XPYPerson+Test1.h */,
+				6CEA6C64246A360F0052E200 /* XPYPerson+Test1.m */,
+				6CEA6C66246A361A0052E200 /* XPYPerson+Test2.h */,
+				6CEA6C67246A361A0052E200 /* XPYPerson+Test2.m */,
+				6CEA6C69246A362D0052E200 /* XPYPerson+Test3.h */,
+				6CEA6C6A246A362D0052E200 /* XPYPerson+Test3.m */,
 			);
 			path = MessageForwarding;
 			sourceTree = "<group>";
@@ -194,6 +209,9 @@
 				6C757716221BDC23005254CF /* UIViewController+XPYMethodSwizzling.m in Sources */,
 				3DBF6D0922068A87002FBFF1 /* main.m in Sources */,
 				6CCA502823A329630048C29B /* UIViewController+XPYMethodSwizze.m in Sources */,
+				6CEA6C68246A361A0052E200 /* XPYPerson+Test2.m in Sources */,
+				6CEA6C65246A360F0052E200 /* XPYPerson+Test1.m in Sources */,
+				6CEA6C6B246A362D0052E200 /* XPYPerson+Test3.m in Sources */,
 				3DBF6D1422068AEB002FBFF1 /* XPYPerson.m in Sources */,
 				6CCA502E23A33AC90048C29B /* UIButton+XPYImageURL.m in Sources */,
 				3DBF6CFB22068A86002FBFF1 /* AppDelegate.m in Sources */,
